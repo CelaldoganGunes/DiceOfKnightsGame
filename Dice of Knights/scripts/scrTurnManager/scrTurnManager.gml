@@ -16,4 +16,9 @@ function changeTurn()
 	{
 		global.turn += 1;
 	}
+	
+	if(!instance_exists(global.playerList[global.turn]))
+	{
+		changeTurn();
+	}
 }

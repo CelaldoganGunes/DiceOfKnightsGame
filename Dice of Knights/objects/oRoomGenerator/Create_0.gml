@@ -22,7 +22,7 @@ global.playerSlot = 4;
 
 instance_create_layer(x,y,"Gui",oTurnManager);
 
-for(var n = 0; n < global.playerSlot; n++)
+for(var n = 0; n < 4; n++)
 {
 	ds_list_shuffle(global.gridList);
 	
@@ -37,7 +37,7 @@ for(var n = 0; n < global.playerSlot; n++)
 	p.playerID = n;
 	p.playerHeart = 3;
 	p.playerTower = 1;
-	p.playerSword = 0;
+	p.playerSword = 10;
 	
 	switch(n)
 	{
@@ -57,6 +57,9 @@ for(var n = 0; n < global.playerSlot; n++)
 			p.sprite_index = sPlayer4;
 		break;
 	}
-	
-	
+}
+
+if(global.playerSlot = 3)
+{
+	instance_destroy(global.playerList[3]);
 }

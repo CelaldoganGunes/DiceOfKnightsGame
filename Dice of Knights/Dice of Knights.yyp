@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sDiceIcon","path":"sprites/sDiceIcon/sDiceIcon.yy",},"order":4,},
+    {"id":{"name":"oDeadPlayer","path":"objects/oDeadPlayer/oDeadPlayer.yy",},"order":6,},
     {"id":{"name":"sPlayer3","path":"sprites/sPlayer3/sPlayer3.yy",},"order":2,},
     {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"order":1,},
     {"id":{"name":"sPlayerIcon","path":"sprites/sPlayerIcon/sPlayerIcon.yy",},"order":0,},
