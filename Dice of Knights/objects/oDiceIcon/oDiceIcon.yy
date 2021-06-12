@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sGrid",
-    "path": "sprites/sGrid/sGrid.yy",
+    "name": "sDiceIcon",
+    "path": "sprites/sDiceIcon/sDiceIcon.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,16 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "GUI",
+    "path": "folders/Objects/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oGrid",
+  "name": "oDiceIcon",
   "tags": [],
   "resourceType": "GMObject",
 }
