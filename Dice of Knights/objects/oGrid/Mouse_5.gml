@@ -1,4 +1,4 @@
-/// @description Movement
+/// @description Tower Build
 
 if (global.moveCount < 1)
 {
@@ -8,6 +8,11 @@ if (global.moveCount < 1)
 var player = getPlayer();
 
 if (point_distance(player.x,player.y,x,y) != 128)
+{
+	exit;
+}
+
+if (player.playerTower < 1)
 {
 	exit;
 }
@@ -22,8 +27,9 @@ if (place_meeting(x,y,oTower))
 	exit;
 }
 
-player.x = x;
-player.y = y;
-global.moveCount -= 1;
+var tower = instance_create_layer(x,y,"Tower",oTower);
+tower.image_index = player.playerID;
 
+global.moveCount -= 1;
+player.playerTower -= 1;
 changeTurn();

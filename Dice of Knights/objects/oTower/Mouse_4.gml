@@ -1,4 +1,4 @@
-/// @description Movement
+/// @description Tower Destroy
 
 if (global.moveCount < 1)
 {
@@ -12,18 +12,13 @@ if (point_distance(player.x,player.y,x,y) != 128)
 	exit;
 }
 
-if (place_meeting(x,y,oPlayer))
+if (player.playerSword < 1)
 {
 	exit;
 }
 
-if (place_meeting(x,y,oTower))
-{
-	exit;
-}
+instance_destroy();
 
-player.x = x;
-player.y = y;
 global.moveCount -= 1;
-
+player.playerSword -= 1;
 changeTurn();
