@@ -57,4 +57,6 @@ for(var n = 0; n < global.playerSlot; n++)
 			p.sprite_index = sPlayer4;
 		break;
 	}
+	
+	
 }
