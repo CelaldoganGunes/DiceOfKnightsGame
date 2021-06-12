@@ -1,6 +1,15 @@
 {
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"sPlayer3","path":"sprites/sPlayer3/sPlayer3.yy",},"order":2,},
+    {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"order":1,},
+    {"id":{"name":"sPlayer1","path":"sprites/sPlayer1/sPlayer1.yy",},"order":0,},
+    {"id":{"name":"sPlayer4","path":"sprites/sPlayer4/sPlayer4.yy",},"order":3,},
+    {"id":{"name":"oRoomGenerator","path":"objects/oRoomGenerator/oRoomGenerator.yy",},"order":2,},
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
+    {"id":{"name":"sGrid","path":"sprites/sGrid/sGrid.yy",},"order":4,},
+    {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":0,},
+    {"id":{"name":"sPlayer2","path":"sprites/sPlayer2/sPlayer2.yy",},"order":1,},
+    {"id":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Amazon Fire","path":"options/amazonfire/options_amazonfire.yy",},
@@ -21,7 +30,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
