@@ -1,8 +1,8 @@
 {
   "resources": [
     {"id":{"name":"sDiceIcon","path":"sprites/sDiceIcon/sDiceIcon.yy",},"order":4,},
-    {"id":{"name":"oDeadPlayer","path":"objects/oDeadPlayer/oDeadPlayer.yy",},"order":6,},
     {"id":{"name":"sPlayer3","path":"sprites/sPlayer3/sPlayer3.yy",},"order":2,},
+    {"id":{"name":"oGamePad","path":"objects/oGamePad/oGamePad.yy",},"order":8,},
     {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"order":1,},
     {"id":{"name":"sPlayerIcon","path":"sprites/sPlayerIcon/sPlayerIcon.yy",},"order":0,},
     {"id":{"name":"sPlayer1","path":"sprites/sPlayer1/sPlayer1.yy",},"order":0,},
@@ -10,6 +10,7 @@
     {"id":{"name":"oDiceIcon","path":"objects/oDiceIcon/oDiceIcon.yy",},"order":4,},
     {"id":{"name":"sPlayer4","path":"sprites/sPlayer4/sPlayer4.yy",},"order":3,},
     {"id":{"name":"oTowerIcon","path":"objects/oTowerIcon/oTowerIcon.yy",},"order":1,},
+    {"id":{"name":"rmLobby","path":"rooms/rmLobby/rmLobby.yy",},"order":0,},
     {"id":{"name":"oRoomGenerator","path":"objects/oRoomGenerator/oRoomGenerator.yy",},"order":4,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"sGrid","path":"sprites/sGrid/sGrid.yy",},"order":4,},
@@ -20,13 +21,14 @@
     {"id":{"name":"sTower","path":"sprites/sTower/sTower.yy",},"order":7,},
     {"id":{"name":"oTower","path":"objects/oTower/oTower.yy",},"order":2,},
     {"id":{"name":"fntArial32","path":"fonts/fntArial32/fntArial32.yy",},"order":0,},
+    {"id":{"name":"oGamePadManager","path":"objects/oGamePadManager/oGamePadManager.yy",},"order":7,},
     {"id":{"name":"sHeartIcon","path":"sprites/sHeartIcon/sHeartIcon.yy",},"order":3,},
     {"id":{"name":"oSwordIcon","path":"objects/oSwordIcon/oSwordIcon.yy",},"order":2,},
     {"id":{"name":"sPlayer2","path":"sprites/sPlayer2/sPlayer2.yy",},"order":1,},
     {"id":{"name":"sSwordIcon","path":"sprites/sSwordIcon/sSwordIcon.yy",},"order":2,},
     {"id":{"name":"oTurnManager","path":"objects/oTurnManager/oTurnManager.yy",},"order":5,},
     {"id":{"name":"scrTurnManager","path":"scripts/scrTurnManager/scrTurnManager.yy",},"order":2,},
-    {"id":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},"order":0,},
+    {"id":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},"order":1,},
   ],
   "Options": [
     {"name":"Amazon Fire","path":"options/amazonfire/options_amazonfire.yy",},
@@ -47,6 +49,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rmLobby","path":"rooms/rmLobby/rmLobby.yy",},},
     {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
   ],
   "Folders": [
