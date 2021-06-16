@@ -37,7 +37,7 @@ for(var n = 0; n < 4; n++)
 	p.playerID = n;
 	p.playerHeart = 3;
 	p.playerTower = 1;
-	p.playerSword = 10;
+	p.playerSword = 0;
 	
 	switch(n)
 	{
@@ -63,3 +63,5 @@ if(global.playerSlot = 3)
 {
 	instance_destroy(global.playerList[3]);
 }
+
+instance_create_layer(x,y,"Gui",oGridMoveStatus);

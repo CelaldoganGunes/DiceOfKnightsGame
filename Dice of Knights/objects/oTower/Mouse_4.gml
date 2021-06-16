@@ -21,4 +21,10 @@ instance_destroy();
 
 global.moveCount -= 1;
 player.playerSword -= 1;
+
+if(player.playerSword < 1)
+{
+	oGridMoveStatus.image_index = 1;
+}
+
 changeTurn();

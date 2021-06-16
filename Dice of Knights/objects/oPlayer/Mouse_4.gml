@@ -17,8 +17,8 @@ if (player.playerSword < 1)
 	exit;
 }
 
-var defender = 1//choose(1,2,2,3,4,5);
-var attacker = 5//choose(1,2,2,3,4,5);
+var defender = choose(1,2,2,3,4,5);
+var attacker = choose(1,2,2,3,4,5);
 
 if (attacker > defender)
 {
@@ -30,8 +30,12 @@ if (attacker > defender)
 	}
 }
 
-
-
 global.moveCount -= 1;
 player.playerSword -= 1;
+
+if(player.playerSword < 1)
+{
+	oGridMoveStatus.image_index = 1;
+}
+
 changeTurn();

@@ -32,4 +32,10 @@ tower.image_index = player.playerID;
 
 global.moveCount -= 1;
 player.playerTower -= 1;
+
+if(player.playerSword < 1)
+{
+	oGridMoveStatus.image_index = 1;
+}
+	
 changeTurn();

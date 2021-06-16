@@ -8,6 +8,8 @@ function changeTurn()
 	global.moveCount = 0;
 	global.isRolled = false;
 	
+	
+	
 	if ((global.turn + 1) =  global.playerSlot)
 	{
 		global.turn = 0;
@@ -20,5 +22,11 @@ function changeTurn()
 	if(!instance_exists(global.playerList[global.turn]))
 	{
 		changeTurn();
+		exit;
 	}
+	
+	var player = getPlayer();
+	oGridMoveStatus.x = player.x;
+	oGridMoveStatus.y = player.y;
+	oGridMoveStatus.visible = false;
 }
