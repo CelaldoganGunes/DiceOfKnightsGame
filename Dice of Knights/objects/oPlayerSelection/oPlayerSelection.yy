@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sPlayerSelection",
+    "path": "sprites/sPlayerSelection/sPlayerSelection.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -19,15 +22,18 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":5,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game Managers",
-    "path": "folders/Objects/Game Managers.yy",
+    "name": "Player Selection",
+    "path": "folders/Objects/Player Selection.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oRoomGenerator",
+  "name": "oPlayerSelection",
   "tags": [],
   "resourceType": "GMObject",
 }

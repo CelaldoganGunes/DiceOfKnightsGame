@@ -1,0 +1,1 @@
+status = PlayerInputs.noinput;

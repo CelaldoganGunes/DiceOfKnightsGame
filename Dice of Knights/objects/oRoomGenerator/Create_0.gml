@@ -1,4 +1,4 @@
-/// @description Place Grids
+/// @description Create Room
 
 global.boxAmountWidth = 7;
 global.boxAmountHeight = 7;
@@ -38,6 +38,7 @@ for(var n = 0; n < 4; n++)
 	p.playerHeart = 3;
 	p.playerTower = 1;
 	p.playerSword = 0;
+	p.playerInput = oPlayerInputImporter.playerInputs[n];
 	
 	switch(n)
 	{
@@ -57,11 +58,17 @@ for(var n = 0; n < 4; n++)
 			p.sprite_index = sPlayer4;
 		break;
 	}
-}
-
-if(global.playerSlot = 3)
-{
-	instance_destroy(global.playerList[3]);
+	
+	if(p.playerInput = PlayerInputs.noinput)
+	{
+		instance_destroy(p);
+	}
 }
 
 instance_create_layer(x,y,"Gui",oGridMoveStatus);
+instance_destroy(oPlayerInputImporter);
+
+if (!instance_exists(global.playerList[0]))
+{
+	changeTurn();
+}

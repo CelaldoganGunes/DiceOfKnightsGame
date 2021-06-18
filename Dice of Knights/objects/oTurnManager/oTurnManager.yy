@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Game Managers",
+    "path": "folders/Objects/Game Managers.yy",
   },
   "resourceVersion": "1.0",
   "name": "oTurnManager",

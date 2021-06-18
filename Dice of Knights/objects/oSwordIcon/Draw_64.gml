@@ -2,7 +2,14 @@ draw_set_font(fntArial32);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-var player = global.playerList[global.turn];
-draw_text(x, y + 36, player.playerSword);
-
-image_index = player.playerID;
+if(instance_exists(global.playerList[global.turn]))
+{
+	var player = global.playerList[global.turn];
+	draw_text(x, y + 36, player.playerSword);
+	
+	image_index = player.playerID;
+}
+else
+{
+	draw_text(x, y + 36, "DEAD");
+}
