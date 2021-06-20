@@ -27,8 +27,7 @@ Zar Atma: LB
 Pas Geçme: LB
 
 Hareket Etme: A
-Grid Seçme: Sol Analog
-
+Grid Seçme: Ok Tuşları
 Saldırma: A
 Kule Kurma: B
 

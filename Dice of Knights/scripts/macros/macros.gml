@@ -15,3 +15,19 @@ enum PlayerInputs
 	gamepad2,
 	gamepad3
 }
+
+/*
+
+
+enum PlayerInputs
+{
+	noinput, 0
+	mouse, 1
+	keyboard, 2
+	gamepad0, 3
+	gamepad1, 4
+	gamepad2, 5
+	gamepad3, 6
+}
+
+*/

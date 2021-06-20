@@ -4,6 +4,7 @@
     {"id":{"name":"sPlayer3","path":"sprites/sPlayer3/sPlayer3.yy",},"order":2,},
     {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"order":1,},
     {"id":{"name":"oPlayerSelection","path":"objects/oPlayerSelection/oPlayerSelection.yy",},"order":0,},
+    {"id":{"name":"oGamePadInputManager","path":"objects/oGamePadInputManager/oGamePadInputManager.yy",},"order":3,},
     {"id":{"name":"sPlayerIcon","path":"sprites/sPlayerIcon/sPlayerIcon.yy",},"order":0,},
     {"id":{"name":"sPlayer1","path":"sprites/sPlayer1/sPlayer1.yy",},"order":0,},
     {"id":{"name":"sTowerIcon","path":"sprites/sTowerIcon/sTowerIcon.yy",},"order":1,},

@@ -67,6 +67,7 @@ for(var n = 0; n < 4; n++)
 
 instance_create_layer(x,y,"Gui",oGridMoveStatus);
 instance_create_layer(x,y,"Gui",oKeyboardInputManager);
+instance_create_layer(x,y,"Gui",oGamePadInputManager);
 instance_destroy(oPlayerInputImporter);
 
 if (!instance_exists(global.playerList[0]))
