@@ -1,0 +1,34 @@
+Fare
+
+Zar Atma: Sol Tıklama
+Pas Geçme: Sol Tıklama
+
+Hareket Etme: Sol Tıklama
+Grid Seçme: Serbest Fare Hareketi
+
+Saldırma: Sol Tıklama
+Kule Kurma: Sağ Tıklama
+
+Klavye
+
+Zar Atma: Boşluk Tuşu
+Pas Geçme: Boşluk Tuşu
+
+Hareket Etme: E
+Grid Seçme: WASD
+
+Saldırma: E
+Kule Kurma: F
+
+
+Gamepad
+
+Zar Atma: LB
+Pas Geçme: LB
+
+Hareket Etme: A
+Grid Seçme: Sol Analog
+
+Saldırma: A
+Kule Kurma: B
+
