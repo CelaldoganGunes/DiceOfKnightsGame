@@ -10,5 +10,8 @@ enum PlayerInputs
 	noinput,
 	mouse,
 	keyboard,
-	gamepad
+	gamepad0,
+	gamepad1,
+	gamepad2,
+	gamepad3
 }
