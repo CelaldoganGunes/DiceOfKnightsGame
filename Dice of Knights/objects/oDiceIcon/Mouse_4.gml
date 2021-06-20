@@ -1,14 +1,7 @@
-if (global.isRolled = false)
+var type = getPlayerInputType();
+
+if (type = PlayerInputs.mouse)
 {
-	global.isRolled = true;
-	global.moveCount = choose(1,2,2,3,4,5);
-	
-	var player = getPlayer();
-	player.playerTower += 1;
-	player.playerSword += 1;
+	RollDice();
 }
-else
-{
-	global.moveCount = 0;
-	changeTurn();
-}
+

@@ -1,3 +1,6 @@
-/// @description Movement
+var type = getPlayerInputType();
 
-MovePlayer(id);
+if (type = PlayerInputs.mouse)
+{
+	MovePlayer(id);
+}

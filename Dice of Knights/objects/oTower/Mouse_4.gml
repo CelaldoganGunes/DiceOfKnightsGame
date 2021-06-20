@@ -1,3 +1,6 @@
-/// @description Tower Destroy
+var type = getPlayerInputType();
 
-AttackTower(id);
+if (type = PlayerInputs.mouse)
+{
+	AttackTower(id);
+}

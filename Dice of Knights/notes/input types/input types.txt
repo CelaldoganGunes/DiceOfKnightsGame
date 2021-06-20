@@ -18,7 +18,7 @@ Hareket Etme: E
 Grid Seçme: WASD
 
 Saldırma: E
-Kule Kurma: F
+Kule Kurma: T
 
 
 Gamepad

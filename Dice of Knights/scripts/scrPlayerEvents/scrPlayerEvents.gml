@@ -1,3 +1,81 @@
+function RollDice()
+{
+	if (global.isRolled = false)
+	{
+		global.isRolled = true;
+		global.moveCount = choose(1,2,2,3,4,5);
+	
+		var player = getPlayer();
+		player.playerTower += 1;
+		player.playerSword += 1;
+	}
+	else
+	{
+		global.moveCount = 0;
+		changeTurn();
+	}
+}
+
+function MoveStatusSquare(xx,yy)
+{
+	with(oGrid)
+	{
+		if(x = xx and y = yy)
+		{
+			GridStatus(id);
+		}
+	}
+}
+
+function GridStatus(grid)
+{
+	if (global.moveCount < 1)
+	{
+		oGridMoveStatus.visible = false;
+		exit;
+	}
+
+	oGridMoveStatus.x = grid.x;
+	oGridMoveStatus.y = grid.y;
+
+	var player = getPlayer();
+
+	if(grid.x = player.x and grid.y = player.y)
+	{
+		oGridMoveStatus.visible = false;
+		exit;
+	}
+
+	oGridMoveStatus.visible = true;
+
+	if (point_distance(player.x,player.y,grid.x,grid.y) != 128)
+	{
+
+		oGridMoveStatus.image_index = 1;
+		exit;
+	}
+
+	if (place_meeting(grid.x,grid.y,oPlayer))
+	{
+		if(player.playerSword < 1)
+		{
+			oGridMoveStatus.image_index = 1;
+			exit;
+		}
+	}
+
+	if (place_meeting(grid.x,grid.y,oTower))
+	{
+		if(player.playerSword < 1)
+		{
+			oGridMoveStatus.image_index = 1;
+			exit;
+		}
+	}
+
+	oGridMoveStatus.image_index = 0;
+}
+
 function MovePlayer(grid)
 {
 	if (global.moveCount < 1)
