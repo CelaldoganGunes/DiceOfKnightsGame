@@ -16,17 +16,6 @@ function RollDice()
 	}
 }
 
-function MoveStatusSquare(xx,yy)
-{
-	with(oGrid)
-	{
-		if(x = xx and y = yy)
-		{
-			GridStatus(id);
-		}
-	}
-}
-
 function GridStatus(grid)
 {
 	if (global.moveCount < 1)

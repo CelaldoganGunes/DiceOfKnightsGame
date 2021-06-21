@@ -1,30 +1,30 @@
-switch(status)
+switch(playerInput)
 {
-	case PlayerInputs.noinput:
-		status = PlayerInputs.mouse;
+	case PlayerInputTypes.noinput:
+		playerInput = PlayerInputTypes.mouse;
 	break;
 
-	case PlayerInputs.mouse:
-		status = PlayerInputs.keyboard;
+	case PlayerInputTypes.mouse:
+		playerInput = PlayerInputTypes.keyboard;
 	break;
 	
-	case PlayerInputs.keyboard:
-		status = PlayerInputs.gamepad0;
+	case PlayerInputTypes.keyboard:
+		playerInput = PlayerInputTypes.gamepad0;
 	break;
 
-	case PlayerInputs.gamepad0:
-		status = PlayerInputs.gamepad1;
+	case PlayerInputTypes.gamepad0:
+		playerInput = PlayerInputTypes.gamepad1;
 	break;
 	
-	case PlayerInputs.gamepad1:
-		status = PlayerInputs.gamepad2;
+	case PlayerInputTypes.gamepad1:
+		playerInput = PlayerInputTypes.gamepad2;
 	break;
 	
-	case PlayerInputs.gamepad2:
-		status = PlayerInputs.gamepad3;
+	case PlayerInputTypes.gamepad2:
+		playerInput = PlayerInputTypes.gamepad3;
 	break;
 	
-	case PlayerInputs.gamepad3:
-		status = PlayerInputs.noinput;
+	case PlayerInputTypes.gamepad3:
+		playerInput = PlayerInputTypes.noinput;
 	break;
 }

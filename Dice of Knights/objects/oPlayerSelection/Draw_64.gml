@@ -4,27 +4,27 @@ draw_set_valign(fa_middle);
 
 draw_text(x, y + 164, "Player " + string(image_index));
 
-switch(status)
+switch(playerInput)
 {
-	case PlayerInputs.noinput:
+	case PlayerInputTypes.noinput:
 	
 		draw_text(x, y + 228, "No Player");
 		
 	break;
 
-	case PlayerInputs.mouse:
+	case PlayerInputTypes.mouse:
 	
 		draw_text(x, y + 228, "Mouse");
 		
 	break;
 
-	case PlayerInputs.keyboard:
+	case PlayerInputTypes.keyboard:
 	
 		draw_text(x, y + 228, "Keyboard");
 		
 	break;
 
-	case PlayerInputs.gamepad0:
+	case PlayerInputTypes.gamepad0:
 	
 		draw_text(x, y + 228, "Game Pad 0");
 		
@@ -39,7 +39,7 @@ switch(status)
 
 	break;
 	
-	case PlayerInputs.gamepad1:
+	case PlayerInputTypes.gamepad1:
 	
 		draw_text(x, y + 228, "Game Pad 1");
 		
@@ -54,7 +54,7 @@ switch(status)
 		
 	break;
 	
-	case PlayerInputs.gamepad2:
+	case PlayerInputTypes.gamepad2:
 	
 		draw_text(x, y + 228, "Game Pad 2");
 				
@@ -69,7 +69,7 @@ switch(status)
 		
 	break;
 	
-	case PlayerInputs.gamepad3:
+	case PlayerInputTypes.gamepad3:
 	
 		draw_text(x, y + 228, "Game Pad 3");
 				

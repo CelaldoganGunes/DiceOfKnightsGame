@@ -1,6 +1,6 @@
 with(oPlayerSelection)
 {
-	other.playerInputs[image_index] = status;
+	other.playerInputs[image_index] = playerInput;
 }
 
 room_goto(rmGame);

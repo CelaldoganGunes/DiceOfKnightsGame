@@ -2,7 +2,7 @@
 
 var type = getPlayerInputType();
 
-if (type = PlayerInputs.mouse)
+if (type = PlayerInputTypes.mouse)
 {
 	AttackPlayer(id);
 }

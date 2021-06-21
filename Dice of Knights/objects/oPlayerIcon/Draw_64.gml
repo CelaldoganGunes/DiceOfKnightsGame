@@ -6,7 +6,6 @@ if(instance_exists(global.playerList[global.turn]))
 {
 	var player = global.playerList[global.turn];
 	draw_text(x, y + 36, player.playerHeart);
-	draw_text(x, y + 72, player.playerInput);
 	
 	image_index = player.playerID;
 }
