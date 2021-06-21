@@ -6,4 +6,3 @@ if (type = PlayerInputTypes.mouse)
 {
 	AttackPlayer(id);
 }
-

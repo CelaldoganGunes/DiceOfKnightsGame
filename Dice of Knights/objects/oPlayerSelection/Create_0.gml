@@ -1,1 +1,1 @@
-playerInput = PlayerInputTypes.noinput;
+playerInput = PlayerInputTypes.mouse;

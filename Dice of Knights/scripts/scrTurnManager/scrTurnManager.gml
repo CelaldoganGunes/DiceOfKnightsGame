@@ -1,3 +1,25 @@
+function RollDice()
+{
+	if (global.isRolled = false)
+	{
+		global.isRolled = true;
+		global.moveCount = choose(1,2,2,3,4,5);
+	
+		var player = getPlayer();
+		player.playerTower += 10;
+		player.playerSword += 10;
+		oGridMoveStatus.visible = true;
+		oGridMoveStatus.image_index = 1;
+		oGridMoveStatus.x = player.x;
+		oGridMoveStatus.y = player.y;
+	}
+	else
+	{
+		global.moveCount = 0;
+		changeTurn();
+	}
+}
+
 function changeTurn()
 {
 	if (global.moveCount > 0)

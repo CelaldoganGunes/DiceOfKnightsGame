@@ -1,1 +1,4 @@
-grid = other.id;
+if (grid != other.id)
+{
+	grid = other.id;
+}
