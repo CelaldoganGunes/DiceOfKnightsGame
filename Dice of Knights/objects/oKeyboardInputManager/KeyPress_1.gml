@@ -36,13 +36,9 @@ else if (keyboard_key = ord("T"))
 		if(x = gX and y = gY)
 		{
 			grid = id;
+			BuildTower(grid);
 		}
 	}
-	
-	if(grid != noone)
-	{
-		BuildTower(grid);
-	}	
 }
 else if (keyboard_key = ord("E"))
 {

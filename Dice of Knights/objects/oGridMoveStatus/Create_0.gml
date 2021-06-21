@@ -1,0 +1,2 @@
+grid = noone;
+player = noone;

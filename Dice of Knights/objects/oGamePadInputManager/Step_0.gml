@@ -42,13 +42,9 @@ else if (gamepad_button_check_pressed(slot,gp_face2))
 		if(x = gX and y = gY)
 		{
 			grid = id;
+			BuildTower(grid);
 		}
 	}
-	
-	if(grid != noone)
-	{
-		BuildTower(grid);
-	}	
 }
 else if (gamepad_button_check_pressed(slot,gp_face1))
 {
@@ -91,4 +87,4 @@ else if (gamepad_button_check_pressed(slot,gp_face1))
 	{
 		MovePlayer(grid);
 	}
-}	
+}  
