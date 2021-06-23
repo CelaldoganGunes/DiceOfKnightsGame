@@ -1,9 +1,9 @@
 #macro GridSize 128
 
-randomize();
+//randomize();
+random_set_seed(123456789)
 
 //window_set_size(960,540);
-
 
 enum PlayerInputTypes
 {

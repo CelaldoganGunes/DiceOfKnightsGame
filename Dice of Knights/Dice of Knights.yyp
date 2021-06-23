@@ -30,6 +30,7 @@
     {"id":{"name":"sHeartIcon","path":"sprites/sHeartIcon/sHeartIcon.yy",},"order":3,},
     {"id":{"name":"rmLobby","path":"rooms/rmLobby/rmLobby.yy",},"order":0,},
     {"id":{"name":"oInputManager","path":"objects/oInputManager/oInputManager.yy",},"order":2,},
+    {"id":{"name":"oDisplayManager","path":"objects/oDisplayManager/oDisplayManager.yy",},"order":3,},
     {"id":{"name":"oSwordIcon","path":"objects/oSwordIcon/oSwordIcon.yy",},"order":2,},
     {"id":{"name":"sPlayer2","path":"sprites/sPlayer2/sPlayer2.yy",},"order":1,},
     {"id":{"name":"sSwordIcon","path":"sprites/sSwordIcon/sSwordIcon.yy",},"order":2,},
