@@ -23,12 +23,13 @@ switch(playerInput)
 		draw_text(x, y + 228, "Keyboard");
 		
 	break;
+	
+	default:
+		
+		var slot = playerInput - 3;
+		draw_text(x, y + 228, "Game Pad " + string(slot));
 
-	case PlayerInputTypes.gamepad0:
-	
-		draw_text(x, y + 228, "Game Pad 0");
-		
-		if(gamepad_is_connected(0))
+		if(gamepad_is_connected(slot))
 		{
 			draw_text(x, y + 292, "Connected");
 		}
@@ -36,50 +37,6 @@ switch(playerInput)
 		{
 			draw_text(x, y + 292, "Not Connected");
 		}
-
-	break;
 	
-	case PlayerInputTypes.gamepad1:
-	
-		draw_text(x, y + 228, "Game Pad 1");
-		
-		if(gamepad_is_connected(1))
-		{
-			draw_text(x, y + 292, "Connected");
-		}
-		else
-		{
-			draw_text(x, y + 292, "Not Connected");
-		}
-		
-	break;
-	
-	case PlayerInputTypes.gamepad2:
-	
-		draw_text(x, y + 228, "Game Pad 2");
-				
-		if(gamepad_is_connected(2))
-		{
-			draw_text(x, y + 292, "Connected");
-		}
-		else
-		{
-			draw_text(x, y + 292, "Not Connected");
-		}
-		
-	break;
-	
-	case PlayerInputTypes.gamepad3:
-	
-		draw_text(x, y + 228, "Game Pad 3");
-				
-		if(gamepad_is_connected(3))
-		{
-			draw_text(x, y + 292, "Connected");
-		}
-		else
-		{
-			draw_text(x, y + 292, "Not Connected");
-		}
 	break;
 }
