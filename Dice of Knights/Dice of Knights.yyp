@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sDiceIcon","path":"sprites/sDiceIcon/sDiceIcon.yy",},"order":4,},
     {"id":{"name":"sPlayer3","path":"sprites/sPlayer3/sPlayer3.yy",},"order":2,},
+    {"id":{"name":"oElixirIcon","path":"objects/oElixirIcon/oElixirIcon.yy",},"order":5,},
     {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"order":1,},
     {"id":{"name":"oPlayerSelection","path":"objects/oPlayerSelection/oPlayerSelection.yy",},"order":0,},
     {"id":{"name":"sPlayerIcon","path":"sprites/sPlayerIcon/sPlayerIcon.yy",},"order":0,},
@@ -12,6 +13,7 @@
     {"id":{"name":"scrGridEvents","path":"scripts/scrGridEvents/scrGridEvents.yy",},"order":5,},
     {"id":{"name":"sPlayer4","path":"sprites/sPlayer4/sPlayer4.yy",},"order":3,},
     {"id":{"name":"oTowerIcon","path":"objects/oTowerIcon/oTowerIcon.yy",},"order":1,},
+    {"id":{"name":"sElixirIcon","path":"sprites/sElixirIcon/sElixirIcon.yy",},"order":5,},
     {"id":{"name":"scrPlayerEvents","path":"scripts/scrPlayerEvents/scrPlayerEvents.yy",},"order":3,},
     {"id":{"name":"oRoomGenerator","path":"objects/oRoomGenerator/oRoomGenerator.yy",},"order":0,},
     {"id":{"name":"sGridMoveStatus","path":"sprites/sGridMoveStatus/sGridMoveStatus.yy",},"order":1,},

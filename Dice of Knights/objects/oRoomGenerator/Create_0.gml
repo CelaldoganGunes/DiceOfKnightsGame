@@ -38,6 +38,7 @@ for(var n = 0; n < 4; n++)
 	p.playerHeart = 3;
 	p.playerTower = 1;
 	p.playerSword = 0;
+	p.playerElixir = 0;
 	p.playerInput = oPlayerInputImporter.playerInputs[n];
 	
 	switch(n)
