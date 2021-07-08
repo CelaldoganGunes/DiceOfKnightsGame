@@ -9,3 +9,11 @@ function getPlayerInputType()
 	
 	return player.playerInput;
 }
+
+function createMagic(_n, _s, _t, _e) constructor
+{
+	magicName = _n;
+	sword = _s;
+	tower = _t;
+	elixir = _e;
+}

@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "GUI Sprites",
+    "path": "folders/Sprites/GUI Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerSelection",
