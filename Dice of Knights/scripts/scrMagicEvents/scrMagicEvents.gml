@@ -64,6 +64,10 @@ function useMagic(magician)
 	{
 		magicEarthquake(magician);
 	}
+	else if(magic.magicName = "Heart")
+	{
+		magicHeart(magician);
+	}
 }
 
 function magicTeleport(magician)
@@ -99,4 +103,21 @@ function magicEarthquake(magician)
 	
 	var grid = oGridMoveStatus.grid;
 	instance_destroy(grid);
+}
+
+function magicHeart(magician)
+{
+	if (oGridMoveStatus.player = noone)
+	{
+		exit;
+	}
+
+	var magic = getMagic();
+	
+	magician.playerSword -= magic.sword;
+	magician.playerTower -= magic.tower;
+	magician.playerElixir -= magic.elixir;
+	
+	var player = oGridMoveStatus.player;
+	player.playerHeart += 1;
 }
