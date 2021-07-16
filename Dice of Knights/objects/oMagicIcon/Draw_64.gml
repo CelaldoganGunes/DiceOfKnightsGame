@@ -4,8 +4,7 @@ draw_set_valign(fa_middle);
 
 if(instance_exists(global.playerList[global.turn]))
 {
-	var player = global.playerList[global.turn];
-	var magic = magicList[image_index];
+	draw_text(x, y + 36, getMagic().magicName);
 }
 else
 {

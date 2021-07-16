@@ -10,10 +10,8 @@ function getPlayerInputType()
 	return player.playerInput;
 }
 
-function createMagic(_n, _s, _t, _e) constructor
+function getMagic()
 {
-	magicName = _n;
-	sword = _s;
-	tower = _t;
-	elixir = _e;
+	var magic = oMagicIcon.magicList[oMagicIcon.image_index]
+	return magic;
 }

@@ -6,8 +6,9 @@ function RollDice()
 		global.moveCount = choose(1,2,2,3,4,5);
 	
 		var player = getPlayer();
-		player.playerTower += 10;
-		player.playerSword += 10;
+		player.playerTower += 5;
+		player.playerSword += 5;
+		player.playerElixir += 5;
 		oGridMoveStatus.visible = true;
 		oGridMoveStatus.image_index = 1;
 		oGridMoveStatus.x = player.x;

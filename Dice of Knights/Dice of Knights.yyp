@@ -30,6 +30,7 @@
     {"id":{"name":"oGridMoveStatus","path":"objects/oGridMoveStatus/oGridMoveStatus.yy",},"order":2,},
     {"id":{"name":"scrTowerEvents","path":"scripts/scrTowerEvents/scrTowerEvents.yy",},"order":4,},
     {"id":{"name":"fntArial32","path":"fonts/fntArial32/fntArial32.yy",},"order":0,},
+    {"id":{"name":"scrMagicEvents","path":"scripts/scrMagicEvents/scrMagicEvents.yy",},"order":6,},
     {"id":{"name":"sHeartIcon","path":"sprites/sHeartIcon/sHeartIcon.yy",},"order":3,},
     {"id":{"name":"rmLobby","path":"rooms/rmLobby/rmLobby.yy",},"order":0,},
     {"id":{"name":"oInputManager","path":"objects/oInputManager/oInputManager.yy",},"order":2,},
@@ -94,7 +95,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.3.570",
   },
   "resourceVersion": "1.4",
   "name": "Dice of Knights",
