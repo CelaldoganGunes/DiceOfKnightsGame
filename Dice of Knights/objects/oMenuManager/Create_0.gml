@@ -1,1 +1,1 @@
-layer_sequence_create("Gui",x,y,seqDiceRollMenu);
+layer_sequence_create("Gui",64,832,seqDiceRollMenu);
