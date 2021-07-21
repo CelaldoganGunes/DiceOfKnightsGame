@@ -24,6 +24,7 @@ Saldırma: E
 Kule Kurma: T
 
 Büyü Değiştirme: F
+Büyü Kullanma: R
 
 Gamepad
 
