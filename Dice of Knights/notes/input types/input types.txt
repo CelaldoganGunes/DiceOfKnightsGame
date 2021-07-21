@@ -9,6 +9,9 @@ Grid Seçme: Serbest Fare Hareketi
 Saldırma: Sol Tıklama
 Kule Kurma: Sağ Tıklama
 
+Büyü Değiştirme: Sol Tıklama
+Büyü Kullanma: Orta Tıklama
+
 Klavye
 
 Zar Atma: Boşluk Tuşu
@@ -20,6 +23,7 @@ Grid Seçme: WASD
 Saldırma: E
 Kule Kurma: T
 
+Büyü Değiştirme: F
 
 Gamepad
 
@@ -28,6 +32,9 @@ Pas Geçme: LB
 
 Hareket Etme: A
 Grid Seçme: Ok Tuşları
+
 Saldırma: A
 Kule Kurma: B
 
+Büyü Değiştirme: RB
+Büyü Kullanma: X

@@ -44,3 +44,11 @@ else if (keyboard_key = vk_space)
 {
 	RollDice();
 }
+else if (keyboard_key = ord("R"))
+{
+	changeMagic();
+}
+else if (keyboard_key = ord("F"))
+{
+	useMagic(getPlayer());
+}

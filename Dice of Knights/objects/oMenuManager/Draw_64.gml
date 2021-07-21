@@ -7,5 +7,5 @@ if (room = rmMenu)
 	draw_text(x,y ,"Dice of Knights");
 	
 	draw_set_font(fntArial32);
-	draw_text(960, 540, "Press Any Keyboard Key");
+	draw_text(960, 540, "Press F3");
 }

@@ -46,3 +46,11 @@ else if (gamepad_button_check_pressed(slot, gp_shoulderl))
 {
 	RollDice();
 }
+else if (gamepad_button_check_pressed(slot, gp_shoulderr))
+{
+	changeMagic();
+}
+else if (gamepad_button_check_pressed(slot,gp_face3))
+{
+	useMagic(getPlayer());
+}
