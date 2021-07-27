@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sDice",
-    "path": "sprites/sDice/sDice.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -20,15 +17,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":76,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Sequence Objects",
-    "path": "folders/Objects/Sequence Objects.yy",
+    "name": "Game Managers",
+    "path": "folders/Objects/Game Managers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oDice",
+  "name": "oFightManager",
   "tags": [],
   "resourceType": "GMObject",
 }

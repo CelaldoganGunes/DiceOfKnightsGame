@@ -51,27 +51,39 @@ function AttackPlayer(defenderPlayer)
 		exit;
 	}
 
+	instance_create_layer(x,y,"FightSeq",oFightManager);
+	
+	layer_set_visible(layer_get_id("Fight"),true);
+	layer_set_visible(layer_get_id("Gui"),false);
+
+	createSequence("FightSeq",384,384,getFightSequence(attackerPlayer));
+	createSequence("FightSeq",1536,384,getFightSequence(defenderPlayer));
+	createSequence("FightSeq",960,256,seqFightText);
+	
+	oFightManager.attackerPlayer = attackerPlayer;
+	oFightManager.defenderPlayer = defenderPlayer;
+}
+
+function seqFightText_Moment()
+{
+	createSequence("FightSeq",0,640,seqDiceRollFight);
+}
+
+function seqDiceRollFight_Moment()
+{
 	var attackerDice = choose(1,2,2,3,4,5);
 	var defenderDice = choose(1,2,2,3,4,5);
-
-	if (attackerDice > defenderDice)
-	{
-		defenderPlayer.playerHeart -= 1;
 	
-		if(defenderPlayer.playerHeart < 1)
-		{
-			instance_destroy(defenderPlayer);
-		}
-	}
-
-	global.moveCount -= 1;
-	attackerPlayer.playerSword -= 1;
-
-	if(attackerPlayer.playerSword < 1)
-	{
-		oGridMoveStatus.image_index = 1;
-	}
-
-	changeTurn();
+	createSequence("FightSeq",-576,640,getDiceSequence(attackerDice));
+	createSequence("FightSeq",576,640,getDiceSequence(defenderDice));
+	
+	oFightManager.attackerDice = attackerDice;
+	oFightManager.defenderDice = defenderDice;
 }
+
+
+
+
+
+
 
