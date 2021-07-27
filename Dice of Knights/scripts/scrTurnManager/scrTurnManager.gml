@@ -9,7 +9,10 @@ function RollDice()
 	if (global.isRolled = false)
 	{
 		global.isRolled = true;
-		createSequence("Gui",0,540,seqDiceRoll);
+		layer_set_visible(layer_get_id("Gui"),false);
+		layer_set_visible(layer_get_id("Fight"),true);
+		createSequence("SeqLayer",0,540,seqDiceRoll);
+		
 	}
 	else
 	{
@@ -84,4 +87,6 @@ function seqDiceRoll_Moment()
 	oGridMoveStatus.image_index = 1;
 	oGridMoveStatus.x = player.x;
 	oGridMoveStatus.y = player.y;
+	layer_set_visible(layer_get_id("Gui"),true);
+	layer_set_visible(layer_get_id("Fight"),false);
 }

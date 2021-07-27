@@ -51,14 +51,14 @@ function AttackPlayer(defenderPlayer)
 		exit;
 	}
 
-	instance_create_layer(x,y,"FightSeq",oFightManager);
+	instance_create_layer(x,y,"SeqLayer",oFightManager);
 	
 	layer_set_visible(layer_get_id("Fight"),true);
 	layer_set_visible(layer_get_id("Gui"),false);
 
-	createSequence("FightSeq",384,384,getFightSequence(attackerPlayer));
-	createSequence("FightSeq",1536,384,getFightSequence(defenderPlayer));
-	createSequence("FightSeq",960,256,seqFightText);
+	createSequence("SeqLayer",384,384,getFightSequence(attackerPlayer));
+	createSequence("SeqLayer",1536,384,getFightSequence(defenderPlayer));
+	createSequence("SeqLayer",960,256,seqFightText);
 	
 	oFightManager.attackerPlayer = attackerPlayer;
 	oFightManager.defenderPlayer = defenderPlayer;
@@ -66,7 +66,7 @@ function AttackPlayer(defenderPlayer)
 
 function seqFightText_Moment()
 {
-	createSequence("FightSeq",0,640,seqDiceRollFight);
+	createSequence("SeqLayer",0,640,seqDiceRollFight);
 }
 
 function seqDiceRollFight_Moment()
@@ -74,8 +74,8 @@ function seqDiceRollFight_Moment()
 	var attackerDice = choose(1,2,2,3,4,5);
 	var defenderDice = choose(1,2,2,3,4,5);
 	
-	createSequence("FightSeq",-576,640,getDiceSequence(attackerDice));
-	createSequence("FightSeq",576,640,getDiceSequence(defenderDice));
+	createSequence("SeqLayer",-576,640,getDiceSequence(attackerDice));
+	createSequence("SeqLayer",576,640,getDiceSequence(defenderDice));
 	
 	oFightManager.attackerDice = attackerDice;
 	oFightManager.defenderDice = defenderDice;
