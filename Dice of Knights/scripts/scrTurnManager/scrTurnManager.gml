@@ -1,11 +1,5 @@
 function RollDice()
-{
-	if (instance_exists(oSeqManager))
-	{
-		exit;
-	}
-	
-	
+{		
 	if (global.isRolled = false)
 	{
 		global.isRolled = true;
