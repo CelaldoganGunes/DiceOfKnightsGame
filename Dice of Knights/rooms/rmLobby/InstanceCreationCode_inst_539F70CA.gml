@@ -1,3 +1,3 @@
-image_index = 3;
-image_alpha = 0.75;
+image_index = 0;
 ds_list_add(oPlayerSelectionManager.players, id);
+selectPlayer(id);
