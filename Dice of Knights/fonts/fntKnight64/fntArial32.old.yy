@@ -357,7 +357,7 @@
     "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "fntArialLogo",
+  "name": "fntArial32",
   "tags": [],
   "resourceType": "GMFont",
 }
