@@ -74,9 +74,9 @@ function seqDiceRoll_Moment()
 	}
 	
 	var player = getPlayer();
-	player.playerTower += 5;
-	player.playerSword += 5;
-	player.playerElixir += 5;
+	player.playerTower += 1;
+	player.playerSword += 1;
+	player.playerElixir += 1;
 	oGridMoveStatus.visible = true;
 	oGridMoveStatus.image_index = 1;
 	oGridMoveStatus.x = player.x;

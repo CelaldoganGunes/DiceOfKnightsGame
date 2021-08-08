@@ -51,6 +51,11 @@ function useMagic(magician)
 	
 	var magic = getMagic();
 	
+	if (global.moveCount < 1)
+	{
+		exit;
+	}	
+	
 	if(checkMagicRecipe(magician) = 0)
 	{
 		exit;
@@ -86,6 +91,7 @@ function magicTeleport(magician)
 	var grid = oGridMoveStatus.grid;
 	magician.x = grid.x;
 	magician.y = grid.y;
+	global.moveCount -= 1;
 }
 
 function magicEarthquake(magician)
@@ -103,6 +109,7 @@ function magicEarthquake(magician)
 	
 	var grid = oGridMoveStatus.grid;
 	instance_destroy(grid);
+	global.moveCount -= 1;
 }
 
 function magicHeart(magician)
@@ -120,4 +127,5 @@ function magicHeart(magician)
 	
 	var player = oGridMoveStatus.player;
 	player.playerHeart += 1;
+	global.moveCount -= 1;
 }
