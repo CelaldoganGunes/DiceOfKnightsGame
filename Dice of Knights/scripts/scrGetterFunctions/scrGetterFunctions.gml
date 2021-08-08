@@ -1,22 +1,22 @@
-function getPlayer()
+function GetPlayer()
 {
 	return global.playerList[global.turn];
 }
 
-function getPlayerInputType()
+function GetPlayerInputType()
 {
 	var player = global.playerList[global.turn];
 	
 	return player.playerInput;
 }
 
-function getMagic()
+function GetMagic()
 {
 	var magic = oMagicIcon.magicList[oMagicIcon.image_index]
 	return magic;
 }
 
-function getFightSequence(player)
+function GetFightSequence(player)
 {
 	if(player.playerID = 0)
 	{
@@ -37,7 +37,7 @@ function getFightSequence(player)
 }
 
 
-function getDiceSequence(number)
+function GetDiceSequence(number)
 {
 	if(number = 1)
 	{

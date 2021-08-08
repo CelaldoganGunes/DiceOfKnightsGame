@@ -3,7 +3,7 @@ if (instance_exists(oSeqManager))
 	exit;
 }
 
-var type = getPlayerInputType();
+var type = GetPlayerInputType();
 
 if (type != PlayerInputTypes.keyboard)
 {
@@ -51,9 +51,9 @@ else if (keyboard_key = vk_space)
 }
 else if (keyboard_key = ord("R"))
 {
-	changeMagic();
+	ChangeMagic();
 }
 else if (keyboard_key = ord("F"))
 {
-	useMagic(getPlayer());
+	UseMagic(GetPlayer());
 }

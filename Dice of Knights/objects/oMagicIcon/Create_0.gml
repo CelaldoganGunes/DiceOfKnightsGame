@@ -1,8 +1,8 @@
-teleport = new createMagic("Teleport", 3,3,5);
-earthquake = new createMagic("Earthquake", 2,3,2);
-heart = new createMagic("Heart", 2,2,1);
-ghost = new createMagic("Ghost", 1,1,1);
-meteor = new createMagic("Meteor", 1,1,1);
+teleport = new CreateMagic("Teleport", 3,3,5);
+earthquake = new CreateMagic("Earthquake", 2,3,2);
+heart = new CreateMagic("Heart", 2,2,1);
+ghost = new CreateMagic("Ghost", 1,1,1);
+meteor = new CreateMagic("Meteor", 1,1,1);
 
 magicList[0] = teleport;
 magicList[1] = earthquake;

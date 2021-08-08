@@ -22,7 +22,7 @@ if (room = rmLobby)
 	if (right - left != 0)
 	{
 		var pos = ds_list_find_index(oPlayerSelectionManager.players,oPlayerSelectionManager.selectedPlayer);
-		unselectPlayer(oPlayerSelectionManager.selectedPlayer);
+		UnselectPlayer(oPlayerSelectionManager.selectedPlayer);
 		
 		pos = pos + right - left;
 		
@@ -35,14 +35,14 @@ if (room = rmLobby)
 			pos = 3;
 		}
 		
-		selectPlayer(ds_list_find_value(oPlayerSelectionManager.players, pos));
+		SelectPlayer(ds_list_find_value(oPlayerSelectionManager.players, pos));
 	}
 	else if (select)
 	{
-		changeInput(oPlayerSelectionManager.selectedPlayer);
+		ChangeInput(oPlayerSelectionManager.selectedPlayer);
 	}
 	else if (start + mouseRight > 0)
 	{	
-		startGame();
+		StartGame();
 	}
 }

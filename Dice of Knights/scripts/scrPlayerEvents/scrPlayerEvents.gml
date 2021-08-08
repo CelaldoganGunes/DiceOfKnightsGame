@@ -5,7 +5,7 @@ function MovePlayer(grid)
 		exit;
 	}
 
-	var player = getPlayer();
+	var player = GetPlayer();
 
 	if (point_distance(player.x,player.y,grid.x,grid.y) != 128)
 	{
@@ -29,7 +29,7 @@ function MovePlayer(grid)
 	player.y = grid.y;
 	global.moveCount -= 1;
 
-	changeTurn();	
+	ChangeTurn();	
 }
 
 function AttackPlayer(defenderPlayer)
@@ -39,7 +39,7 @@ function AttackPlayer(defenderPlayer)
 		exit;
 	}
 
-	var attackerPlayer = getPlayer();
+	var attackerPlayer = GetPlayer();
 
 	if (point_distance(attackerPlayer.x,attackerPlayer.y,defenderPlayer.x,defenderPlayer.y) != 128)
 	{
@@ -56,9 +56,9 @@ function AttackPlayer(defenderPlayer)
 	layer_set_visible(layer_get_id("Fight"),true);
 	layer_set_visible(layer_get_id("Gui"),false);
 
-	createSequence("SeqLayer",384,384,getFightSequence(attackerPlayer));
-	createSequence("SeqLayer",1536,384,getFightSequence(defenderPlayer));
-	createSequence("SeqLayer",960,256,seqFightText);
+	CreateSequence("SeqLayer",384,384,GetFightSequence(attackerPlayer));
+	CreateSequence("SeqLayer",1536,384,GetFightSequence(defenderPlayer));
+	CreateSequence("SeqLayer",960,256,seqFightText);
 	
 	oFightManager.attackerPlayer = attackerPlayer;
 	oFightManager.defenderPlayer = defenderPlayer;
@@ -66,7 +66,7 @@ function AttackPlayer(defenderPlayer)
 
 function seqFightText_Moment()
 {
-	createSequence("SeqLayer",0,640,seqDiceRollFight);
+	CreateSequence("SeqLayer",0,640,seqDiceRollFight);
 }
 
 function seqDiceRollFight_Moment()
@@ -74,8 +74,8 @@ function seqDiceRollFight_Moment()
 	var attackerDice = choose(1,2,2,3,4,5);
 	var defenderDice = choose(1,2,2,3,4,5);
 	
-	createSequence("SeqLayer",-576,640,getDiceSequence(attackerDice));
-	createSequence("SeqLayer",576,640,getDiceSequence(defenderDice));
+	CreateSequence("SeqLayer",-576,640,GetDiceSequence(attackerDice));
+	CreateSequence("SeqLayer",576,640,GetDiceSequence(defenderDice));
 	
 	oFightManager.attackerDice = attackerDice;
 	oFightManager.defenderDice = defenderDice;

@@ -5,7 +5,7 @@ if (instance_exists(oSeqManager))
 	exit;
 }
 
-var type = getPlayerInputType();
+var type = GetPlayerInputType();
 
 if (type = PlayerInputTypes.mouse)
 {

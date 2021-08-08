@@ -3,7 +3,7 @@ if (instance_exists(oSeqManager))
 	exit;
 }
 
-var type = getPlayerInputType();
+var type = GetPlayerInputType();
 
 if (type < 3)
 {
@@ -49,7 +49,7 @@ else if (gamepad_button_check_pressed(slot,gp_face2))
 }
 else if (gamepad_button_check_pressed(slot,gp_face3))
 {
-	useMagic(getPlayer());
+	UseMagic(GetPlayer());
 }
 else if (gamepad_button_check_pressed(slot, gp_shoulderl))
 {
@@ -57,5 +57,5 @@ else if (gamepad_button_check_pressed(slot, gp_shoulderl))
 }
 else if (gamepad_button_check_pressed(slot, gp_shoulderr))
 {
-	changeMagic();
+	ChangeMagic();
 }

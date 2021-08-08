@@ -4,11 +4,11 @@ draw_set_valign(fa_middle);
 
 if(instance_exists(global.playerList[global.turn]))
 {
-	draw_text(x, y + 36, getMagic().magicName);
+	draw_text(x, y + 36, GetMagic().magicName);
 	
-	var sword = string(getMagic().sword);
-	var tower = string(getMagic().tower);
-	var elixir = string(getMagic().elixir);
+	var sword = string(GetMagic().sword);
+	var tower = string(GetMagic().tower);
+	var elixir = string(GetMagic().elixir);
 	draw_text(x, y + 72, sword + " - " + tower + " - " + elixir);
 }
 else

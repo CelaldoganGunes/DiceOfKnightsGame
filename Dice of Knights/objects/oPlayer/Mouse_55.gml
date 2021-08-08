@@ -5,14 +5,14 @@ if (instance_exists(oSeqManager))
 	exit;
 }
 
-if (getPlayer() != id)
+if (GetPlayer() != id)
 {
 	exit;
 }
 
-var type = getPlayerInputType();
+var type = GetPlayerInputType();
 
 if (type = PlayerInputTypes.mouse)
 {
-	useMagic(id);
+	UseMagic(id);
 }

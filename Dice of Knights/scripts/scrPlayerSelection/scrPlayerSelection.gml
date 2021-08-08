@@ -1,4 +1,4 @@
-function changeInput(player)
+function ChangeInput(player)
 {
 	switch(player.playerInput)
 	{
@@ -24,19 +24,19 @@ function changeInput(player)
 	}
 }
 
-function selectPlayer(player)
+function SelectPlayer(player)
 {
 	player.image_alpha = 1;
 	oPlayerSelectionManager.selectedPlayer = player;
 }
 
-function unselectPlayer(player)
+function UnselectPlayer(player)
 {
 	player.image_alpha = 0.75;
 	oPlayerSelectionManager.selectedPlayer = -1;
 }
 
-function startGame()
+function StartGame()
 {
 	var count = 0;
 	with(oPlayerSelection)

@@ -3,7 +3,7 @@ function RollDice()
 	if (global.isRolled = false)
 	{
 		/*
-		var player = getPlayer();
+		var player = GetPlayer();
 		var list = player.myLastPositions;
 		
 		if (ds_list_size(list) > 2)
@@ -21,18 +21,18 @@ function RollDice()
 		global.isRolled = true;
 		layer_set_visible(layer_get_id("Gui"),false);
 		layer_set_visible(layer_get_id("Fight"),true);
-		createSequence("SeqLayer",0,540,seqDiceRoll);
+		CreateSequence("SeqLayer",0,540,seqDiceRoll);
 		
 	}
 	else
 	{
-		SaveLastPosition(getPlayer())
+		SaveLastPosition(GetPlayer())
 		global.moveCount = 0;
-		changeTurn();
+		ChangeTurn();
 	}
 }
 
-function changeTurn()
+function ChangeTurn()
 {
 	if (global.moveCount > 0)
 	{
@@ -55,11 +55,11 @@ function changeTurn()
 	
 	if(!instance_exists(global.playerList[global.turn]))
 	{
-		changeTurn();
+		ChangeTurn();
 		exit;
 	}
 	
-	var player = getPlayer();
+	var player = GetPlayer();
 	oGridMoveStatus.x = player.x;
 	oGridMoveStatus.y = player.y;
 	oGridMoveStatus.visible = false;
@@ -71,26 +71,26 @@ function seqDiceRoll_Moment()
 	
 	if(global.moveCount = 1)
 	{
-		createSequence("Gui",0,540,seqDice1);	
+		CreateSequence("Gui",0,540,seqDice1);	
 	}
 	else if(global.moveCount = 2)
 	{
-		createSequence("Gui",0,540,seqDice2);	
+		CreateSequence("Gui",0,540,seqDice2);	
 	}
 	else if(global.moveCount = 3)
 	{
-		createSequence("Gui",0,540,seqDice3);	
+		CreateSequence("Gui",0,540,seqDice3);	
 	}
 	else if(global.moveCount = 4)
 	{
-		createSequence("Gui",0,540,seqDice4);	
+		CreateSequence("Gui",0,540,seqDice4);	
 	}
 	else if(global.moveCount = 5)
 	{
-		createSequence("Gui",0,540,seqDice5);	
+		CreateSequence("Gui",0,540,seqDice5);	
 	}
 	
-	var player = getPlayer();
+	var player = GetPlayer();
 	var list = player.myLastPositions;
 
 	oGridMoveStatus.visible = true;

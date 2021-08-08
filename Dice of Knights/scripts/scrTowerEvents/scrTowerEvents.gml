@@ -5,7 +5,7 @@ function BuildTower(grid)
 		exit;
 	}
 
-	var player = getPlayer();
+	var player = GetPlayer();
 
 	if (point_distance(player.x,player.y,grid.x,grid.y) != 128)
 	{
@@ -40,7 +40,7 @@ function BuildTower(grid)
 		oGridMoveStatus.image_index = 1;
 	}
 	
-	changeTurn();
+	ChangeTurn();
 }
 
 function AttackTower(tower)
@@ -50,7 +50,7 @@ function AttackTower(tower)
 		exit;
 	}
 
-	var player = getPlayer();
+	var player = GetPlayer();
 
 	if (point_distance(player.x,player.y,tower.x,tower.y) != 128)
 	{
@@ -72,5 +72,5 @@ function AttackTower(tower)
 		oGridMoveStatus.image_index = 1;
 	}
 
-	changeTurn();
+	ChangeTurn();
 }

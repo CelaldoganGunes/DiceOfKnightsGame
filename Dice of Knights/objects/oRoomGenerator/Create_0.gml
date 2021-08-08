@@ -70,5 +70,5 @@ instance_destroy(oPlayerInputImporter);
 
 if (!instance_exists(global.playerList[0]))
 {
-	changeTurn();
+	ChangeTurn();
 }

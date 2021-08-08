@@ -1,1 +1,1 @@
-changeInput(id);
+ChangeInput(id);

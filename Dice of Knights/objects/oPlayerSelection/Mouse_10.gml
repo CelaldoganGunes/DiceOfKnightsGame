@@ -1,2 +1,2 @@
-unselectPlayer(oPlayerSelectionManager.selectedPlayer);
-selectPlayer(id);
+UnselectPlayer(oPlayerSelectionManager.selectedPlayer);
+SelectPlayer(id);

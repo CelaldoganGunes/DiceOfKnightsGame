@@ -28,7 +28,7 @@ if event_data[? "event_type"] == "sequence event"
 				oGridMoveStatus.image_index = 1;
 			}
 
-			changeTurn();
+			ChangeTurn();
 			layer_set_visible(layer_get_id("Fight"),false);
 			layer_set_visible(layer_get_id("Gui"),true);
 			instance_destroy();

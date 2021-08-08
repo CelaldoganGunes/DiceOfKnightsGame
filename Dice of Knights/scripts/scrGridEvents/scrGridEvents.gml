@@ -20,7 +20,7 @@ function GridStatus(grid)
 	oGridMoveStatus.x = grid.x;
 	oGridMoveStatus.y = grid.y;
 
-	var player = getPlayer();
+	var player = GetPlayer();
 
 	oGridMoveStatus.visible = true;
 
