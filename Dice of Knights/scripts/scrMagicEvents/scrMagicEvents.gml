@@ -4,6 +4,7 @@ function createMagic(_n, _s, _t, _e) constructor
 	sword = _s;
 	tower = _t;
 	elixir = _e;
+	whoUsedThisMagic = ds_list_create();
 }
 
 function changeMagic()
@@ -45,11 +46,12 @@ function checkMagicRecipe(magician)
 
 function useMagic(magician)
 {
-	var grid = oGridMoveStatus.grid;
-	var player = oGridMoveStatus.player;
-	var tower = oGridMoveStatus.tower;
-	
 	var magic = getMagic();
+	
+	if(ds_list_find_index(magic.whoUsedThisMagic,magician) != -1)
+	{
+		exit;
+	}	
 	
 	if (global.moveCount < 1)
 	{
@@ -92,6 +94,8 @@ function magicTeleport(magician)
 	magician.x = grid.x;
 	magician.y = grid.y;
 	global.moveCount -= 1;
+	ds_list_add(magic.whoUsedThisMagic,magician);
+	changeTurn();
 }
 
 function magicEarthquake(magician)
@@ -102,7 +106,7 @@ function magicEarthquake(magician)
 	}
 
 	var magic = getMagic();
-	
+
 	magician.playerSword -= magic.sword;
 	magician.playerTower -= magic.tower;
 	magician.playerElixir -= magic.elixir;
@@ -110,6 +114,8 @@ function magicEarthquake(magician)
 	var grid = oGridMoveStatus.grid;
 	instance_destroy(grid);
 	global.moveCount -= 1;
+	ds_list_add(magic.whoUsedThisMagic,magician);
+	changeTurn();
 }
 
 function magicHeart(magician)
@@ -128,4 +134,6 @@ function magicHeart(magician)
 	var player = oGridMoveStatus.player;
 	player.playerHeart += 1;
 	global.moveCount -= 1;
+	ds_list_add(magic.whoUsedThisMagic,magician);
+	changeTurn();
 }
