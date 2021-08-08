@@ -2,6 +2,7 @@ function RollDice()
 {		
 	if (global.isRolled = false)
 	{
+		/*
 		var player = getPlayer();
 		var list = player.myLastPositions;
 		
@@ -16,7 +17,7 @@ function RollDice()
 				RandomTeleport(player);
 			}
 		}
-		
+		*/
 		global.isRolled = true;
 		layer_set_visible(layer_get_id("Gui"),false);
 		layer_set_visible(layer_get_id("Fight"),true);
@@ -90,20 +91,34 @@ function seqDiceRoll_Moment()
 	}
 	
 	var player = getPlayer();
-	player.playerTower += 1;
-	player.playerSword += 1;
-	player.playerElixir += 1;
+	var list = player.myLastPositions;
+
 	oGridMoveStatus.visible = true;
 	oGridMoveStatus.image_index = 1;
 	oGridMoveStatus.x = player.x;
 	oGridMoveStatus.y = player.y;
 	layer_set_visible(layer_get_id("Gui"),true);
 	layer_set_visible(layer_get_id("Fight"),false);
+	
+	if (ds_list_size(list) > 2)
+	{
+		var pos0 = ds_list_find_value(list,0);
+		var pos1 = ds_list_find_value(list,1);
+		var pos2 = ds_list_find_value(list,2);
+			
+		if (pos0 = pos1 and pos1 = pos2)
+		{
+			exit;
+		}
+	}	
+	
+	player.playerTower += 1;
+	player.playerSword += 1;
+	player.playerElixir += 1;
 }
 
 function RandomTeleport(player)
 {
-	
 	ds_list_shuffle(global.gridList);
 	
 	var grid = ds_list_find_value(global.gridList,0);	
