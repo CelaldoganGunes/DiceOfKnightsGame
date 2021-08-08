@@ -1,0 +1,2 @@
+player = noone;
+tower = noone;

@@ -8,6 +8,9 @@ if (room = rmMenu)
 	
 	draw_set_font(fntKnight96);
 	draw_text(x, y + 100, "Press Start/Space");
+	
+	draw_set_font(fntKnight32);
+	draw_text(x, y + 540, "Celaldogan Gunes");
 }
 else if(room = rmLobby)
 {

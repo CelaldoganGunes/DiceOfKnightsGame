@@ -2,6 +2,21 @@ function RollDice()
 {		
 	if (global.isRolled = false)
 	{
+		var player = getPlayer();
+		var list = player.myLastPositions;
+		
+		if (ds_list_size(list) > 2)
+		{
+			var pos0 = ds_list_find_value(list,0);
+			var pos1 = ds_list_find_value(list,1);
+			var pos2 = ds_list_find_value(list,2);
+			
+			if (pos0 = pos1 and pos1 = pos2)
+			{
+				RandomTeleport(player);
+			}
+		}
+		
 		global.isRolled = true;
 		layer_set_visible(layer_get_id("Gui"),false);
 		layer_set_visible(layer_get_id("Fight"),true);
@@ -10,6 +25,7 @@ function RollDice()
 	}
 	else
 	{
+		SaveLastPosition(getPlayer())
 		global.moveCount = 0;
 		changeTurn();
 	}
@@ -83,4 +99,26 @@ function seqDiceRoll_Moment()
 	oGridMoveStatus.y = player.y;
 	layer_set_visible(layer_get_id("Gui"),true);
 	layer_set_visible(layer_get_id("Fight"),false);
+}
+
+function RandomTeleport(player)
+{
+	
+	ds_list_shuffle(global.gridList);
+	
+	var grid = ds_list_find_value(global.gridList,0);	
+	
+	if (grid.player != noone or grid.tower != noone)
+	{
+		RandomTeleport(player);
+	}
+	else if (grid = player.grid)
+	{
+		RandomTeleport(player);
+	}
+	else
+	{
+		player.x = grid.x;
+		player.y = grid.y;
+	}
 }

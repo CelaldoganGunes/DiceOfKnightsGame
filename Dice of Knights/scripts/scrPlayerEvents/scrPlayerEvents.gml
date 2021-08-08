@@ -81,9 +81,13 @@ function seqDiceRollFight_Moment()
 	oFightManager.defenderDice = defenderDice;
 }
 
-
-
-
-
-
-
+function SaveLastPosition(player)
+{
+	var list = player.myLastPositions;
+	
+	if (ds_list_size(list) > 2)
+	{
+		ds_list_delete(list,0);
+	}
+	ds_list_add(list,player.grid);
+}

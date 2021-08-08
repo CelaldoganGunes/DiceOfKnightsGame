@@ -22,14 +22,12 @@ global.playerSlot = 4;
 
 instance_create_layer(x,y,"Gui",oTurnManager);
 
+ds_list_shuffle(global.gridList);
+
 for(var n = 0; n < 4; n++)
 {
-	ds_list_shuffle(global.gridList);
-	
-	var pos = irandom(ds_list_size(global.gridList)-1);
+	var pos = n;
 	var grid = ds_list_find_value(global.gridList,pos);
-	
-	ds_list_delete(global.gridList,pos);
 	
 	var p = instance_create_layer(grid.x, grid.y, "Player", oPlayer);
 
