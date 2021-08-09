@@ -112,9 +112,9 @@ function seqDiceRoll_Moment()
 		}
 	}	
 	
-	player.playerTower += 10;
-	player.playerSword += 10;
-	player.playerElixir += 10;
+	player.playerTower += 1;
+	player.playerSword += 1;
+	player.playerElixir += 1;
 }
 
 function RandomTeleport(player)
