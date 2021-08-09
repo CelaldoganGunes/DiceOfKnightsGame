@@ -2,7 +2,7 @@
   "spriteId": null,
   "timeUnits": 1,
   "playback": 0,
-  "playbackSpeed": 20.0,
+  "playbackSpeed": 40.0,
   "playbackSpeedType": 0,
   "autoRecord": true,
   "volume": 1.0,

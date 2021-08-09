@@ -26,10 +26,10 @@ else if(room = rmLobby)
 	draw_text(64,832+64,"Mouse / Left Click");
 	
 	draw_set_font(fntXbox32);
-	draw_text(64,896+64,"g / A D v");
+	draw_text(64,896+64,"g / A D a");
 	
 	draw_set_font(fntPs32);
-	draw_text(64,960+64,"h / A D o");
+	draw_text(64,960+64,"h / A D x");
 	
 	//Right
 	

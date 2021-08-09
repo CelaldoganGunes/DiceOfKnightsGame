@@ -1,6 +1,8 @@
 var left = gamepad_button_check_pressed(0, gp_padl);
 var right = gamepad_button_check_pressed(0, gp_padr);
 
+var face1 = gamepad_button_check_pressed(0, gp_face1);
+
 var start = gamepad_button_check_pressed(0,gp_start);
 var select = gamepad_button_check_pressed(0,gp_select);
 
@@ -37,7 +39,7 @@ if (room = rmLobby)
 		
 		SelectPlayer(ds_list_find_value(oPlayerSelectionManager.players, pos));
 	}
-	else if (select)
+	else if (face1)
 	{
 		ChangeInput(oPlayerSelectionManager.selectedPlayer);
 	}

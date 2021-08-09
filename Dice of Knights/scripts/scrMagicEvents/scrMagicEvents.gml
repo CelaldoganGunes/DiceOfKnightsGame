@@ -124,15 +124,21 @@ function MagicHeart(magician)
 	{
 		exit;
 	}
-
+	
+	var player = oGridMoveStatus.player;
+	
+	if (player.playerHeart < 1 or player.playerHeart > 2)
+	{
+		exit;
+	}
+	
 	var magic = GetMagic();
 	
 	magician.playerSword -= magic.sword;
 	magician.playerTower -= magic.tower;
 	magician.playerElixir -= magic.elixir;
 	
-	var player = oGridMoveStatus.player;
-	player.playerHeart += 1;
+	player.playerHeart = 3;
 	global.moveCount -= 1;
 	ds_list_add(magic.whoUsedThisMagic,magician);
 	ChangeTurn();
