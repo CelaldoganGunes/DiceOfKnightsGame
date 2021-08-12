@@ -39,8 +39,8 @@ else if(room = rmLobby)
 	draw_text(1856,832+64,"Right Click");
 	
 	draw_set_font(fntXbox32);
-	draw_text(1856,896+64,"m");
+	draw_text(1856,896+64,"b");
 	
 	draw_set_font(fntPs32);
-	draw_text(1856,960+64,"r");	
+	draw_text(1856,960+64,"c");	
 }

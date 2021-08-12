@@ -2,14 +2,13 @@ var left = gamepad_button_check_pressed(0, gp_padl);
 var right = gamepad_button_check_pressed(0, gp_padr);
 
 var face1 = gamepad_button_check_pressed(0, gp_face1);
+var face2 = gamepad_button_check_pressed(0, gp_face2);
 
 var start = gamepad_button_check_pressed(0,gp_start);
-var select = gamepad_button_check_pressed(0,gp_select);
 
 var space = keyboard_check_pressed(vk_space);
 
 var mouseLeft = mouse_check_button_pressed(mb_left);
-var mouseMiddle = mouse_check_button_pressed(mb_middle);
 var mouseRight = mouse_check_button_pressed(mb_right);
 
 if (room = rmMenu)
@@ -43,7 +42,7 @@ if (room = rmLobby)
 	{
 		ChangeInput(oPlayerSelectionManager.selectedPlayer);
 	}
-	else if (start + mouseRight > 0)
+	else if (face2 + mouseRight > 0)
 	{	
 		StartGame();
 	}
