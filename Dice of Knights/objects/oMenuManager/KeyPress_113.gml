@@ -1,2 +1,2 @@
-screen_save(working_directory + string(date_current_datetime()) + ".png")
+screen_save(working_directory + string(current_day) + "_" + string(current_month)  + "_" + string(current_year) + "_" + string(current_hour) + "_" + string(current_minute) + "_" + string(current_second) + "_" + string(current_time) + ".png")
  

@@ -26,7 +26,7 @@ if (room = rmLobby)
 		var pos = ds_list_find_index(oPlayerSelectionManager.players,oPlayerSelectionManager.selectedPlayer);
 		UnselectPlayer(oPlayerSelectionManager.selectedPlayer);
 		
-		pos = pos + right - left;
+		pos -= right - left;
 		
 		if (pos > 3)
 		{
