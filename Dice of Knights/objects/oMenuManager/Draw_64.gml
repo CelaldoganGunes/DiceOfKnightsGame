@@ -1,4 +1,5 @@
 draw_set_font(fntKnight128);
+draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
@@ -42,5 +43,14 @@ else if(room = rmLobby)
 	draw_text(1856,896+64,"b");
 	
 	draw_set_font(fntPs32);
-	draw_text(1856,960+64,"c");	
+	draw_text(1856,960+64,"c");
+	
+	draw_set_halign(fa_center);
+	draw_set_font(fntKnight32);
+	draw_text(960,1000,"Press Middle Click/R1 to see controls.");	
+}
+else if(room = rmControls)
+{
+	draw_set_font(fntKnight32);
+	draw_text(960,1000, "Press Right Click/R1 to go back.");
 }
