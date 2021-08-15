@@ -63,6 +63,7 @@ function ChangeTurn()
 	oGridMoveStatus.x = player.x;
 	oGridMoveStatus.y = player.y;
 	oGridMoveStatus.visible = false;
+	ChangeMagicButton();
 }
 
 function seqDiceRoll_Moment()

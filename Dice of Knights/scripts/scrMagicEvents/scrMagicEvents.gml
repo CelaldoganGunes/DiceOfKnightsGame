@@ -7,6 +7,21 @@ function CreateMagic(_n, _s, _t, _e) constructor
 	whoUsedThisMagic = ds_list_create();
 }
 
+function ChangeMagicButton()
+{
+	var magic = GetMagic();
+	var magician = GetPlayer();
+
+	if(ds_list_find_index(magic.whoUsedThisMagic,magician) = -1)
+	{
+		oMagicIcon.image_alpha = 1;
+	}
+	else
+	{
+		oMagicIcon.image_alpha = 0.75;
+	}
+}
+
 function ChangeMagic()
 {
 	with(oMagicIcon)
@@ -19,6 +34,7 @@ function ChangeMagic()
 		{
 			image_index += 1;
 		}
+		ChangeMagicButton();
 	}
 }
 
@@ -51,7 +67,7 @@ function UseMagic(magician)
 	if(ds_list_find_index(magic.whoUsedThisMagic,magician) != -1)
 	{
 		exit;
-	}	
+	}
 	
 	if (global.moveCount < 1)
 	{
@@ -95,6 +111,7 @@ function MagicTeleport(magician)
 	magician.y = grid.y;
 	global.moveCount -= 1;
 	ds_list_add(magic.whoUsedThisMagic,magician);
+	ChangeMagicButton();
 	ChangeTurn();
 }
 
@@ -115,6 +132,7 @@ function MagicEarthquake(magician)
 	instance_destroy(grid);
 	global.moveCount -= 1;
 	ds_list_add(magic.whoUsedThisMagic,magician);
+	ChangeMagicButton();
 	ChangeTurn();
 }
 
@@ -141,5 +159,6 @@ function MagicHeart(magician)
 	player.playerHeart = 3;
 	global.moveCount -= 1;
 	ds_list_add(magic.whoUsedThisMagic,magician);
+	ChangeMagicButton();
 	ChangeTurn();
 }
