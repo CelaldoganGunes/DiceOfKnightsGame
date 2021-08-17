@@ -101,6 +101,11 @@ function seqDiceRoll_Moment()
 	layer_set_visible(layer_get_id("Gui"),true);
 	layer_set_visible(layer_get_id("Fight"),false);
 	
+	if (instance_number(oPlayer) = 2)
+	{
+		VanishGrid();
+	}
+	
 	if (ds_list_size(list) > 2)
 	{
 		var pos0 = ds_list_find_value(list,0);

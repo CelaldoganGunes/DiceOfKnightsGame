@@ -60,3 +60,27 @@ function GridStatus(grid)
 
 	oGridMoveStatus.image_index = 0;
 }
+
+function VanishGrid()
+{
+	with(oGrid)
+	{
+		event_user(1);
+	}	
+	
+	ds_list_shuffle(global.gridList);
+	
+	var grid = ds_list_find_value(global.gridList,0);
+	
+	if (grid.player = noone or grid.tower = noone)
+	{
+		with(grid)
+		{
+			event_user(0);
+		}
+	}
+	else
+	{
+		VanishGrid();
+	}
+}
