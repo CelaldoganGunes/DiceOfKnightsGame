@@ -28,6 +28,7 @@ function RollDice()
 	{
 		SaveLastPosition(GetPlayer())
 		global.moveCount = 0;
+		
 		ChangeTurn();
 	}
 }
@@ -58,6 +59,11 @@ function ChangeTurn()
 		ChangeTurn();
 		exit;
 	}
+	
+	if (instance_number(oPlayer) = 2)
+	{
+		VanishGrid();
+	}	
 	
 	var player = GetPlayer();
 	oGridMoveStatus.x = player.x;
@@ -100,11 +106,6 @@ function seqDiceRoll_Moment()
 	oGridMoveStatus.y = player.y;
 	layer_set_visible(layer_get_id("Gui"),true);
 	layer_set_visible(layer_get_id("Fight"),false);
-	
-	if (instance_number(oPlayer) = 2)
-	{
-		VanishGrid();
-	}
 	
 	if (ds_list_size(list) > 2)
 	{
