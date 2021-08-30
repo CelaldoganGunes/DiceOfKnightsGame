@@ -62,3 +62,17 @@ else if(room = rmControls)
 		room_goto(rmLobby);
 	}
 }
+
+/*
+
+	Music System
+
+*/
+
+if (audio_is_playing(musicCurrent) = false)
+{
+	musicCurrent = ds_list_find_value(musicList,irandom(2));
+	
+	audio_play_sound(musicCurrent,1,0);
+	
+}
