@@ -11,7 +11,8 @@ if (room = rmMenu)
 	draw_text(x, y + 100, "Press Start/Space");
 	
 	draw_set_font(fntKnight32);
-	draw_text(x, y + 540, "Celaldogan Gunes");
+	draw_text(x, y + 500, "Game by Celaldogan Gunes");
+	draw_text(x, y + 540, "Music by Bajur Kenez");
 }
 else if(room = rmLobby)
 {
