@@ -62,6 +62,13 @@ else if(room = rmControls)
 		room_goto(rmLobby);
 	}
 }
+else if(room = rmEndGame)
+{
+	if ((start + space + mouseLeft) > 0)
+	{
+		room_goto(rmMenu);
+	}
+}
 
 /*
 
