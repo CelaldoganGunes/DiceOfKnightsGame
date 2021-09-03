@@ -71,8 +71,14 @@ else if(room = rmControls)
 
 if (audio_is_playing(musicCurrent) = false)
 {
-	musicCurrent = ds_list_find_value(musicList,irandom(2));
-	
-	audio_play_sound(musicCurrent,1,0);
-	
+	if (musicWait > 0)
+	{
+		musicWait -= 1;
+	}
+	else
+	{
+		musicCurrent = ds_list_find_value(musicList,irandom(2));
+		audio_play_sound(musicCurrent,1,0);
+		musicWait = irandom(1200);
+	}
 }

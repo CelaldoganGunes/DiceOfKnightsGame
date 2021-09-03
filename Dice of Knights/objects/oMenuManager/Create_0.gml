@@ -9,5 +9,5 @@ ds_list_add(musicList, sndMusic1);
 ds_list_add(musicList, sndMusic2);
 ds_list_add(musicList, sndMusic3);
 
-audio_play_sound(sndMusic2,1,0);
-musicCurrent = sndMusic2;
+musicCurrent = noone;
+musicWait = 150;
