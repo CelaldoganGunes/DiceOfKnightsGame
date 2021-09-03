@@ -11,3 +11,5 @@ ds_list_add(musicList, sndMusic3);
 
 musicCurrent = noone;
 musicWait = 150;
+
+winnerPlayer = noone;

@@ -55,5 +55,10 @@ else if(room = rmControls)
 	draw_set_font(fntKnight32);
 	draw_text(960,1000, "Press Right Click/R1 to go back.");
 }
-
-
+else if(room = rmEndGame)
+{
+	draw_set_font(fntKnight128);
+	draw_text(960,540, "Player " + string(winnerPlayer) + " Won!");
+	draw_set_font(fntKnight64);
+	draw_text(960,640, "Press Start/Space for Main Menu");
+}

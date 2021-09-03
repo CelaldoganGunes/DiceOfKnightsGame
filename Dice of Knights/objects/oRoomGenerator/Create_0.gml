@@ -33,7 +33,7 @@ for(var n = 0; n < 4; n++)
 
 	global.playerList[n] = p;
 	p.playerID = n;
-	p.playerHeart = 3;
+	p.playerHeart = 1;
 	p.playerTower = 1;
 	p.playerSword = 0;
 	p.playerElixir = 0;

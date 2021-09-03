@@ -48,6 +48,7 @@
     {"id":{"name":"oPlayerInputImporter","path":"objects/oPlayerInputImporter/oPlayerInputImporter.yy",},"order":1,},
     {"id":{"name":"oPlayerIcon","path":"objects/oPlayerIcon/oPlayerIcon.yy",},"order":0,},
     {"id":{"name":"scrSeqFunctions","path":"scripts/scrSeqFunctions/scrSeqFunctions.yy",},"order":7,},
+    {"id":{"name":"rmEndGame","path":"rooms/rmEndGame/rmEndGame.yy",},"order":4,},
     {"id":{"name":"oControls","path":"objects/oControls/oControls.yy",},"order":7,},
     {"id":{"name":"sTower","path":"sprites/sTower/sTower.yy",},"order":2,},
     {"id":{"name":"oTower","path":"objects/oTower/oTower.yy",},"order":3,},
@@ -104,6 +105,7 @@
     {"roomId":{"name":"rmLobby","path":"rooms/rmLobby/rmLobby.yy",},},
     {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
     {"roomId":{"name":"rmControls","path":"rooms/rmControls/rmControls.yy",},},
+    {"roomId":{"name":"rmEndGame","path":"rooms/rmEndGame/rmEndGame.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

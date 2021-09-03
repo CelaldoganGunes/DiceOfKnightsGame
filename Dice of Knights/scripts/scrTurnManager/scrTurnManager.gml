@@ -69,7 +69,7 @@ function ChangeTurn()
 	oGridMoveStatus.x = player.x;
 	oGridMoveStatus.y = player.y;
 	oGridMoveStatus.visible = false;
-	ChangeMagicButton();
+	//ChangeMagicButton();
 }
 
 function seqDiceRoll_Moment()
@@ -142,5 +142,17 @@ function RandomTeleport(player)
 	{
 		player.x = grid.x;
 		player.y = grid.y;
+	}
+}
+
+function FinishGame()
+{
+	if (instance_number(oPlayer) < 2)
+	{
+		with(oPlayer)
+		{
+			oMenuManager.winnerPlayer = playerID;
+			room_goto(rmEndGame);		
+		}
 	}
 }

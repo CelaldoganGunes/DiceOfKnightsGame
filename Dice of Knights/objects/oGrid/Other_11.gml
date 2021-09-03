@@ -9,6 +9,7 @@ if (toVanish < 4)
 		if (player != noone)
 		{
 			instance_destroy(player);
+			FinishGame();
 			ChangeTurn();
 		}
 	}

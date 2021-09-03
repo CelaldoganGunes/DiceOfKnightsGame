@@ -17,6 +17,7 @@ if event_data[? "event_type"] == "sequence event"
 				if(defenderPlayer.playerHeart < 1)
 				{
 					instance_destroy(defenderPlayer);
+					FinishGame();
 				}
 			}
 
