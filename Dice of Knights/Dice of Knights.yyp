@@ -92,6 +92,8 @@
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"tvOS","path":"options/tvos/options_tvos.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
+    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
+    {"name":"Windows UWP","path":"options/windowsuap/options_windowsuap.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -141,7 +143,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.3.574",
+    "IDEVersion": "2.3.6.595",
   },
   "resourceVersion": "1.4",
   "name": "Dice of Knights",
